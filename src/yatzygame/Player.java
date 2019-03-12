@@ -13,13 +13,14 @@ public class Player {
     
     private String name;
     private int points = 0;
+    private String[][] scoreCard;
     
     
     public Player(String nameOfPlayer){
         this.name = nameOfPlayer;
         this.points = points;
         ScoreSheet s = new ScoreSheet();
-        s.initializeScoreCard();
+        this.scoreCard = s.initializeScoreCard();
     }
     
     public String getPlayerName(){
@@ -31,7 +32,7 @@ public class Player {
     }
     
     public String[][] getScoreCard(){
-       
+        return scoreCard;
     }
     
     public String toString(){
