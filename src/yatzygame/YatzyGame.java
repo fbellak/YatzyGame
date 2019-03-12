@@ -5,6 +5,9 @@
  */
 package yatzygame;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 /**
  *
  * @author febe
@@ -19,7 +22,12 @@ public class YatzyGame {
       Player p = new Player("YatzySlayer2000");
       
       System.out.println(p);
-      
+      ScoreSheet s = new ScoreSheet();
+     // s.setTotalUpperSectionScore();
+      //s.setTotalLowerSectionScore();
+      System.out.println(s.setTotalScore());
+      s.initializeScoreCard();
+      System.out.println(s.initializeScoreCard().length);
      
     }
     

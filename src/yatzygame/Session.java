@@ -12,7 +12,10 @@ package yatzygame;
 public class Session {
     
     public void nextTurn(){
-        
+        for(int i = 0; i < 3; i++){
+            
+           
+        }
     }
     
 }
